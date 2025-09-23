@@ -30,41 +30,9 @@ class Logger {
 
 const logger = new Logger();
 
-// Theme toggle functionality
-function initThemeToggle() {
-    const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
-    
-    // Load saved theme or default to dark
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    if (savedTheme === 'light') {
-        body.classList.add('light-mode');
-        themeToggle.textContent = '🌙';
-    } else {
-        themeToggle.textContent = '☀️';
-    }
-    
-    themeToggle.addEventListener('click', function() {
-        body.classList.toggle('light-mode');
-        const isLight = body.classList.contains('light-mode');
-        
-        // Update button icon
-        themeToggle.textContent = isLight ? '🌙' : '☀️';
-        
-        // Save theme preference
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
-        
-        // Log theme change
-        logger.log('theme_change', { theme: isLight ? 'light' : 'dark' });
-    });
-}
-
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
     logger.log('page_load', { page: 'home' });
-    
-    // Initialize theme toggle
-    initThemeToggle();
 
     // Mobile navigation toggle
     const navToggle = document.getElementById('navToggle');

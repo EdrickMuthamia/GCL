@@ -59,21 +59,7 @@ body.light-mode .site-header {
     color: #ff6b35;
 }
 
-.theme-toggle {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    margin-left: 1rem;
-}
 
-.theme-toggle:hover {
-    background: rgba(255,107,53,0.1);
-    transform: scale(1.1);
-}
 
 .main-nav ul {
     display: flex;
@@ -522,43 +508,7 @@ body.light-mode .expertise-item p {
     color: #666;
 }
 
-/* Sustainability Grid */
-.sustainability-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
 
-.sustainability-item {
-    text-align: center;
-    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
-    padding: 2rem;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    border: 2px solid #4CAF50;
-}
-
-.sustainability-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(76, 175, 80, 0.3);
-}
-
-.sustainability-item .icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.sustainability-item h4 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-body.light-mode .sustainability-item {
-    background: linear-gradient(135deg, #f8f9fa, #e8f5e8);
-}
 
 /* Contact section */
 .contact-section {
